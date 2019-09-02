@@ -1,10 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Net.NetworkInformation;
-using System.Text;
+﻿using System.Collections.Generic;
 using System.Threading;
-using System.Threading.Tasks;
 
 namespace ThreadTask
 {
@@ -34,8 +29,8 @@ namespace ThreadTask
 
         public static void BuildLogMessage(CustomStorage log)
         {
-            Log.LogQueue.Enqueue(log);
-            Log.AutoResetEvent.Set();
+            LogQueue.Enqueue(log);
+            AutoResetEvent.Set();
         }
 
     }
