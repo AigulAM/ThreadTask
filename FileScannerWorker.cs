@@ -30,7 +30,6 @@ namespace ThreadTask
                 Log.BuildLogMessage(log);
                 return false;
             }
-            Start(dirPath);
             return true;
         }
 
